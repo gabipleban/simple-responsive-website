@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0) 75%, rgba(194,192,192) 95% );
+}
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    height: 60px;
+    background-color: rgb(194, 192, 192);
+    text-align: center;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.nav-mobile {
+    margin-right: 100%;
+}
+
+.nav-mobile button {
+    padding: 0 30px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.header-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+/* HEADER */
+
+.header-img {
+    position: relative;
+    height: 330px;
+    background-image: url("../img/wolf-1351940_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+.header-text h1 {
+    margin-bottom: 5px;
+}
+
+.header-text span {
+    text-transform: uppercase;
+    color: rgb(0, 140, 255);
+}
+.header-text p {
+    font-size: 14px;
+}
+
+/* MAIN */
+.products {
+    font-size: 0;
+}
+
+section {
+    margin: 80px 0;
+}
+
+main h2 {
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -5px;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(0, 140, 255);
+}
+
+.about-us p {
+    padding: 0 20px;
+}
+.main-product {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-product:hover .product-text h3 {
+    transform: scale(1.2);
+}
+
+.first-product {
+    background-image: url("../img/computer-4484282_1920.jpg");
+}
+.second-product {
+    background-image: url("../img/laptop-336704_1920.jpg");
+}
+.third-product {
+    background-image: url("../img/social-networking-2187996_1920.jpg");
+}
+.fourth-product {
+    background-image: url("../img/work-731198_1920.jpg");
+}
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.product-text h3 {
+    transition: transform 0.3s;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 160%;
+}
+
+footer {
+    height: 80px;
+    font-size: 10px;
+    background-color: rgb(194, 192, 192);
+    line-height: 80px;
+    border-top:1px solid rgb(73,73,73) ;
+    text-align: center;
+
+}
+@media (min-width: 400px) {
+    .header-text h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+    .product-text h3 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .product-text {
+        font-size: 19px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}

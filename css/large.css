@@ -1,0 +1,13 @@
+/* (min-width: 992px) */
+.header-img {
+    
+    background-image: url('../img/wolf-1351940_1920.jpg');
+    background-size: cover;
+   
+}
+
+.main-product {
+    
+    width: 50%;
+    
+}
